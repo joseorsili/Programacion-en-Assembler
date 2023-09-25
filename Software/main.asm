@@ -1,7 +1,6 @@
 ;====================================================================
 ; DEFINICIONES
 ;====================================================================
-
 #include p16f877a.inc                ; Incluir el archivo de definición de registros
 
 ;====================================================================
@@ -26,8 +25,13 @@ RST   code  0x0
 ;====================================================================
 Start
   BSF STATUS, RP0
-  BCF TRISB, 0 ; RB0 como salida (LED 1)
+  BCF TRISB, 0 ; RB0 como salida (ventilador)
+  BCF TRISB, 1 ; RB1 como salida (calefactor)
   BCF STATUS, RP0
+
+  ; Restaurar el estado inicial (apagar ambos dispositivos)
+  BCF PORTB, 0 ; Apagar el ventilador
+  BCF PORTB, 1 ; Apagar el calefactor
 
   ; Configurar ADC
   BSF ADCON1, PCFG0 ; Configurar RA0/AN0 como entrada analógica (0000 para AN0)
@@ -42,21 +46,24 @@ BUCLE
 
   ; Llamar a la subrutina para leer el sensor LM35
   CALL ReadLM35
+  
+   ; Comparar con 24 grados Celsius (usando el valor 31 para esta explicación)
+   MOVLW 0x0D ; Calibracion del sensor
+   SUBWF temperatura, W ; Restar temperatura - 25 y dejar el resultado en W
+   BTFSC STATUS, C ; Si el resultado es negativo, la temperatura es menor a 24 grados
+   GOTO TEMPERATURA_BAJA ; Si es negativo, saltar a la rutina de calefacción
+   GOTO TEMPERATURA_ALTA ; Si no es negativo, saltar a la rutina de ventilador
 
-  ; Comparar con un valor fijo (para pruebas)
-  MOVLW 0x80 ; Comparar con 128 (valor intermedio para un ADC de 10 bits)
-  SUBWF ADRESH, W ; Restar ADRESH - 128 y dejar el resultado en W
-  BTFSS STATUS, Z ; Si el resultado es cero, saltar
-  GOTO SUPERA_TEMP ; Si no es cero, saltar
-
-  ; Encender el LED 1
-  BSF PORTB, 0
+TEMPERATURA_BAJA
+  ; Encender el calefactor (apagar el ventilador)
+  BSF PORTB, 1 ; Encender calefactor
+  BCF PORTB, 0 ; Apagar ventilador
   GOTO BUCLE ; Continuar en el bucle principal
 
-SUPERA_TEMP
-  ; Apagar el LED 1
-  BCF PORTB, 0
-
+TEMPERATURA_ALTA
+  ; Encender el ventilador (apagar el calefactor)
+  BSF PORTB, 0 ; Encender ventilador
+  BCF PORTB, 1 ; Apagar calefactor
   GOTO BUCLE ; Continuar en el bucle principal
 
 ; Subrutina para leer el sensor LM35
