@@ -2,4 +2,4 @@
 
 ## Link del video:
 
-[![Alt text](https://img.youtube.com/vi/configuroweb/0.jpg)](https://youtu.be/iGDomUWyOtI)
+[![Alt text](../assets/Portada.jpg)](https://youtu.be/iGDomUWyOtI)
