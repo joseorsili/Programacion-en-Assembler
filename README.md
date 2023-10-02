@@ -21,15 +21,15 @@
 - 4. Utilizar herramientas de control de versiones como Git y plataformas de colaboración como GitHub para documentar y compartir el proyecto.
 - 5. Crear un video demostrativo explicando el funcionamiento del proyecto, el código ASM y las decisiones de diseño tomadas.
 
-Desarrollo
+### Desarrollo
 El objetivo es que el proyecto esté optimizado para microcontroladores de baja, media o alta gama. El estudiante debe elegir el microcontrolador más apropiado para su proyecto, ya sea de la familia PIC o AVR.
 
-Ejercicio Seleccionado: Control de Temperatura
+### Ejercicio Seleccionado: Control de Temperatura
 - Descripción: Diseñar un sistema para controlar la temperatura de una habitación pequeña.
 - Requisitos: Utilizar un sensor de temperatura y controlar un ventilador o calefactor mediante una salida de PWM.
 - Microcontroladores sugeridos: A elección del estudiante. Deben justificar su selección en base a los requisitos del proyecto.
 
-Evaluación
+### Evaluación
 La evaluación del Trabajo Práctico "Programación en ASM" se dividirá en trescategorías principales, que en conjunto sumarán un total de 100 puntos. A
 continuación, se detallan los criterios de evaluación para cada categoría.
 ### Código (40 puntos máximos)
