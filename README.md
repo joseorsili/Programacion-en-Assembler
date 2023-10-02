@@ -32,27 +32,27 @@ Ejercicio Seleccionado: Control de Temperatura
 Evaluación
 La evaluación del Trabajo Práctico "Programación en ASM" se dividirá en trescategorías principales, que en conjunto sumarán un total de 100 puntos. A
 continuación, se detallan los criterios de evaluación para cada categoría.
-- Código (40 puntos máximos)
+### Código (40 puntos máximos)
   1. Funcionalidad (15 puntos)
-- El código debe ser completamente funcional y debe cumplir con todos los requisitos del ejercicio elegido.
+  - El código debe ser completamente funcional y debe cumplir con todos los requisitos del ejercicio elegido.
   2. Optimización (10 puntos)
-- El código debe estar optimizado en términos de uso de recursos del microcontrolador (memoria, velocidad de procesamiento, etc.).
+  - El código debe estar optimizado en términos de uso de recursos del microcontrolador (memoria, velocidad de procesamiento, etc.).
   3. Estructura y Organización (10 puntos)
-- El código debe estar bien organizado, con funciones claramente definidas, y comentarios explicativos apropiados.
+  - El código debe estar bien organizado, con funciones claramente definidas, y comentarios explicativos apropiados.
   4. Legibilidad (5 puntos)
-- Uso adecuado de la indentación, nombres de variables significativos y un estilo de codificación coherente.
--  Documentación (30 puntos máximos)
+  - Uso adecuado de la indentación, nombres de variables significativos y un estilo de codificación coherente.
+###  Documentación (30 puntos máximos)
   1. README y Documentación Interna (10 puntos)
-- El README debe contener instrucciones claras sobre cómo compilar y ejecutar el proyecto. La documentación interna debe explicar cómo funciona el código.
-2. Diagrama Esquemático (10 puntos)
-- Debe incluir un diagrama esquemático claro y detallado del hardware utilizado, con todos los componentes bien etiquetados.
-3. Justificación de Diseño (10 puntos)
-- Explicar por qué se eligió un determinado microcontrolador y cómo se abordaron los requisitos y desafíos del proyecto.
-- Video explicativo (30 puntos máximos)
-1. Claridad y Estructura (10 puntos)
-- El video debe estar bien estructurado y presentar las ideas de manera clara y lógica.
-2. Demostración del Funcionamiento (10 puntos)
-- Debe incluir una demostración práctica que muestre que el proyecto funciona según los requisitos establecidos.
-3. Explicación del Código y Diseño (10 puntos)
-- El video debe incluir una explicación detallada del código ASM utilizado, y justificar las decisiones de diseño tomadas.
+  - El README debe contener instrucciones claras sobre cómo compilar y ejecutar el proyecto. La documentación interna debe explicar cómo funciona el código.
+  2. Diagrama Esquemático (10 puntos)
+  - Debe incluir un diagrama esquemático claro y detallado del hardware utilizado, con todos los componentes bien etiquetados.
+  3. Justificación de Diseño (10 puntos)
+  - Explicar por qué se eligió un determinado microcontrolador y cómo se abordaron los requisitos y desafíos del proyecto.
+### Video explicativo (30 puntos máximos)
+  1. Claridad y Estructura (10 puntos)  
+  - El video debe estar bien estructurado y presentar las ideas de manera clara y lógica.
+  2. Demostración del Funcionamiento (10 puntos)
+  - Debe incluir una demostración práctica que muestre que el proyecto funciona según los requisitos establecidos.
+  3. Explicación del Código y Diseño (10 puntos)
+  - El video debe incluir una explicación detallada del código ASM utilizado, y justificar las decisiones de diseño tomadas.
 La suma de todas estas categorías dará como resultado la puntuación final del Trabajo Práctico.
