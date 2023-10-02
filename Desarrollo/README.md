@@ -1,1 +1,1 @@
-## Codigo en Assembler del dispositivo Sensor de temperatura
+## Desarrollo del dispositivo para Control de Temperatura con programacion en lenguaje Assembler
