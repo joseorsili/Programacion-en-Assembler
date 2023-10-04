@@ -1,5 +1,7 @@
-## Presentacion del prototipo
+### Presentacion del prototipo
+- Se incluye PDF con detalle del prototipo, componentes utilizados y justificacion del diseño y Micro utilizado.
 
-## Link del video:
+
+### Link al video:
 
 [![Alt text](../assets/Portada.jpg)](https://youtu.be/YJ1PTxF9o3I)
